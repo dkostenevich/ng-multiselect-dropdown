@@ -40,6 +40,7 @@ export class MultiSelectComponent implements ControlValueAccessor {
     selectAllText: 'Select All',
     unSelectAllText: 'UnSelect All',
     allowSearchFilter: false,
+    customSearchFilter: false,
     limitSelection: -1,
     clearSearchFilter: true,
     maxHeight: 197,
@@ -48,7 +49,8 @@ export class MultiSelectComponent implements ControlValueAccessor {
     noDataAvailablePlaceholderText: 'No data available',
     closeDropDownOnSelection: false,
     showSelectedItemsAtTop: false,
-    defaultOpen: false
+    defaultOpen: false,
+    class: 'multiselect-dropdown'
   };
 
   @Input()
@@ -64,11 +66,7 @@ export class MultiSelectComponent implements ControlValueAccessor {
 
   @Input()
   public set settings(value: IDropdownSettings) {
-    if (value) {
-      this._settings = Object.assign(this.defaultSettings, value);
-    } else {
-      this._settings = Object.assign(this.defaultSettings);
-    }
+    this._settings = Object.assign(this.defaultSettings, value || {});
   }
 
   @Input()
@@ -76,11 +74,6 @@ export class MultiSelectComponent implements ControlValueAccessor {
     if (!value) {
       this._data = [];
     } else {
-      // const _items = value.filter((item: any) => {
-      //   if (typeof item === 'string' || (typeof item === 'object' && item && item[this._settings.idField] && item[this._settings.textField])) {
-      //     return item;
-      //   }
-      // });
       this._data = value.map(
         (item: any) =>
           typeof item === 'string'

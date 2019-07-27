@@ -11,19 +11,19 @@
     "ng2 multiselect dropdown",
     "ng4 multiselect dropdown"
   ],
-  "author": "Nilesh Patel",
+  "author": "Dmitry Kostenevich",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nileshpatel17/ng-multiselect-dropdown.git"
+    "url": "git+ssh://git@github.com/dkostenevich/ng-multiselect-dropdown.git"
   },
   "bugs": {
-    "url": "https://github.com/nileshpatel17/ng-multiselect-dropdown/issues"
+    "url": "https://github.com/dkostenevich/ng-multiselect-dropdown/issues"
   },
-  "homepage": "nileshpatel17/ng-multiselect-dropdown#readme",
+  "homepage": "dkostenevich/ng-multiselect-dropdown#readme",
   "peerDependencies": {
-    "@angular/common": "^2.3.1 || >=4.0.0",
-    "@angular/core": "^2.3.1 || >=4.0.0",
-    "@angular/forms": "^2.3.1 || >=4.0.0"
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/forms": "^8.0.0"
   }
 }

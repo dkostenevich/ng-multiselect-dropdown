@@ -7,6 +7,7 @@ export interface IDropdownSettings {
   unSelectAllText?: string;
   allowSearchFilter?: boolean;
   clearSearchFilter?: boolean;
+  customSearchFilter?: boolean;
   maxHeight?: number;
   itemsShowLimit?: number;
   limitSelection?: number;
@@ -15,6 +16,7 @@ export interface IDropdownSettings {
   closeDropDownOnSelection?: boolean;
   showSelectedItemsAtTop?: boolean;
   defaultOpen?: boolean;
+  class?: string;
 }
 
 export class ListItem {

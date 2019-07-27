@@ -6,7 +6,7 @@
 
 Angular multiselect dropdown component for web applications. Easy to integrate and use. It can be bind to any custom data source.
 
-# [Demo](https://nileshpatel17.github.io/ng-multiselect-dropdown/)
+# [Demo](https://dkostenevich.github.io/ng-multiselect-dropdown/)
 
 ![demo](Screenshots/ng-multiselect-dropdown_v0.1.6.gif)
 
@@ -26,7 +26,7 @@ Angular multiselect dropdown component for web applications. Easy to integrate a
 npm install ng-multiselect-dropdown
 ```
 
-And then include it in your module (see [app.module.ts](https://github.com/NileshPatel17/ng-multiselect-dropdown/blob/master/src/app/app.module.ts)):
+And then include it in your module (see [app.module.ts](https://github.com/dkostenevich/ng-multiselect-dropdown/blob/master/src/app/app.module.ts)):
 
 ```ts
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';

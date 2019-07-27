@@ -9,7 +9,7 @@ import { createTestingModule, tickAndDetectChanges } from './helper'
     template: ``
 })
 class Ng2MultiSelectDropdownMultipleSelect {
-    @ViewChild(MultiSelectComponent) select: MultiSelectComponent;
+    @ViewChild(MultiSelectComponent, { static: false }) select: MultiSelectComponent;
     cities = [
         { item_id: 0, item_text: 'Navsari' },
         { item_id: 1, item_text: 'Mumbai' },
@@ -28,7 +28,7 @@ class Ng2MultiSelectDropdownMultipleSelect {
         closeDropDownOnSelection: true,
     };
 }
-// https://github.com/NileshPatel17/ng-multiselect-dropdown/issues/67
+// https://github.com/dkostenevich/ng-multiselect-dropdown/issues/67
 describe('ng-multiselect-component: Issue No: 67( Option with value = 0 does not work)', function () {
     let fixture: ComponentFixture<Ng2MultiSelectDropdownMultipleSelect>;
     beforeEach(
