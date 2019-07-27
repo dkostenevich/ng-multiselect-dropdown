@@ -19,9 +19,9 @@
     "build:prod": "ng build --prod --base-href https://dkostenevich.github.io/ng-multiselect-dropdown/",
     "clear:lib": "rimraf dist-lib",
     "copyfiles": "copyfiles -u 1 ./dist-lib/**/*.* node_modules/ng-multiselect-dropdown",
-    "build:lib": "yarn clear:lib && ng-packagr -p ng-package.json",
-    "postbuild:lib": "yarn copyfiles",
-    "prepublish": "yarn build:prod",
+    "build:lib": "npm run clear:lib && ng-packagr -p ng-package.json",
+    "postbuild:lib": "npm run copyfiles",
+    "prepublish": "npm run build:prod",
     "publish": "ngh --no-silent false --name=\"dkostenevich\" --email=\"dima_spaker@gmail.com\"",
     "deploy": "ng build --prod --bh /ng-multiselect-dropdown/ && angular-cli-ghpages --no-silent --repo=https://github.com/dkostenevich/ng-multiselect-dropdown.git --name=\"Dmitry Kostenevich\" --email=dima_spaker@gmail.com",
     "deployOnly": "angular-cli-ghpages --no-silent --repo=https://github.com/dkostenevich/ng-multiselect-dropdown.git --name=\"Dmitry Kostenevich\" --email=dima_spaker@gmail.com"
