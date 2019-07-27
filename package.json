@@ -2,10 +2,12 @@
   "name": "ng-multiselect-dropdown",
   "version": "0.3.0",
   "private": true,
+  "main": "dist-lib/bundles/ng-multiselect-dropdown.umd.js",
   "description": "Angular Multi-Select Dropdown",
   "author": "Dmitry Kostenevich",
   "license": "MIT",
   "scripts": {
+    "postinstall": "npm run build:lib",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
