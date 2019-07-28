@@ -299,11 +299,16 @@ export class MultiSelectComponent implements ControlValueAccessor {
   }
 
   closeDropdown() {
-    this._settings.defaultOpen = false;
     // clear search text
     if (this._settings.clearSearchFilter) {
       this.filter.text = '';
     }
+
+    if (!this._settings.defaultOpen) {
+      return;
+    }
+
+    this._settings.defaultOpen = false;
     this.onDropDownClose.emit();
   }
 
