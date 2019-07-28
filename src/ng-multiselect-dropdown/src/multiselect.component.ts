@@ -88,6 +88,8 @@ export class MultiSelectComponent implements ControlValueAccessor {
 
   @Output('onFilterChange')
   onFilterChange: EventEmitter<ListItem> = new EventEmitter<any>();
+  @Output('onDropDownOpen')
+  onDropDownOpen: EventEmitter<ListItem> = new EventEmitter<any>();
   @Output('onDropDownClose')
   onDropDownClose: EventEmitter<ListItem> = new EventEmitter<any>();
 
@@ -291,6 +293,8 @@ export class MultiSelectComponent implements ControlValueAccessor {
     this._settings.defaultOpen = !this._settings.defaultOpen;
     if (!this._settings.defaultOpen) {
       this.onDropDownClose.emit();
+    } else {
+      this.onDropDownOpen.emit();
     }
   }
 
