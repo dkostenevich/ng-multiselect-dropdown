@@ -6,7 +6,7 @@
         {{item.text}}
         <a (click)="onItemClick($event,item)">x</a>
       </span>
-      <span class="dropdonw-icon">
+      <span class="dropdown-icon">
         <span class="remaining" *ngIf="itemShowRemaining()>0">+{{itemShowRemaining()}}</span>
         <span [ngClass]="_settings.defaultOpen ? 'dropdown-up' : 'dropdown-down'"></span>
       </span>
