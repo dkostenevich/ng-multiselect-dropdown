@@ -398,18 +398,13 @@ ListFilterPipe = __decorate([
     })
 ], ListFilterPipe);
 
-var NgMultiSelectDropDownModule_1;
-let NgMultiSelectDropDownModule = NgMultiSelectDropDownModule_1 = class NgMultiSelectDropDownModule {
-    static forRoot() {
-        return {
-            ngModule: NgMultiSelectDropDownModule_1
-        };
-    }
+let NgMultiSelectDropDownModule = class NgMultiSelectDropDownModule {
 };
-NgMultiSelectDropDownModule = NgMultiSelectDropDownModule_1 = __decorate([
+NgMultiSelectDropDownModule = __decorate([
     NgModule({
         imports: [CommonModule, FormsModule],
         declarations: [MultiSelectComponent, ClickOutsideDirective, ListFilterPipe],
+        entryComponents: [MultiSelectComponent],
         exports: [MultiSelectComponent]
     })
 ], NgMultiSelectDropDownModule);

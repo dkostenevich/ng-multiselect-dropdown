@@ -428,17 +428,11 @@ var ListFilterPipe = /** @class */ (function () {
 var NgMultiSelectDropDownModule = /** @class */ (function () {
     function NgMultiSelectDropDownModule() {
     }
-    NgMultiSelectDropDownModule_1 = NgMultiSelectDropDownModule;
-    NgMultiSelectDropDownModule.forRoot = function () {
-        return {
-            ngModule: NgMultiSelectDropDownModule_1
-        };
-    };
-    var NgMultiSelectDropDownModule_1;
-    NgMultiSelectDropDownModule = NgMultiSelectDropDownModule_1 = __decorate([
+    NgMultiSelectDropDownModule = __decorate([
         NgModule({
             imports: [CommonModule, FormsModule],
             declarations: [MultiSelectComponent, ClickOutsideDirective, ListFilterPipe],
+            entryComponents: [MultiSelectComponent],
             exports: [MultiSelectComponent]
         })
     ], NgMultiSelectDropDownModule);
