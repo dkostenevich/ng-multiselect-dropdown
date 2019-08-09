@@ -175,6 +175,9 @@ var MultiSelectComponent = /** @class */ (function () {
     MultiSelectComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
+    MultiSelectComponent.prototype.setDisabledState = function (isDisabled) {
+        this.disabled = isDisabled;
+    };
     // Set touched on blur
     MultiSelectComponent.prototype.onTouched = function () {
         this.closeDropdown();

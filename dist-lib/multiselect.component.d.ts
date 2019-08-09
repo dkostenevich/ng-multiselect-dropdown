@@ -30,6 +30,7 @@ export declare class MultiSelectComponent implements ControlValueAccessor {
     writeValue(value: any): void;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
+    setDisabledState(isDisabled: boolean): void;
     onTouched(): void;
     trackByFn(index: any, item: any): any;
     isSelected(clickedItem: ListItem): boolean;

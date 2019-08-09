@@ -189,6 +189,10 @@ export class MultiSelectComponent implements ControlValueAccessor {
     this.onTouchedCallback = fn;
   }
 
+  setDisabledState(isDisabled: boolean) {
+    this.disabled = isDisabled;
+  }
+
   // Set touched on blur
   @HostListener('blur')
   public onTouched() {

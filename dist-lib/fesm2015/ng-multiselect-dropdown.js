@@ -156,6 +156,9 @@ let MultiSelectComponent = class MultiSelectComponent {
     registerOnTouched(fn) {
         this.onTouchedCallback = fn;
     }
+    setDisabledState(isDisabled) {
+        this.disabled = isDisabled;
+    }
     // Set touched on blur
     onTouched() {
         this.closeDropdown();
